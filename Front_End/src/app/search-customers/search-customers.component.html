@@ -1,0 +1,20 @@
+<br><br>
+<h3><b style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><u>Find By Age</u></b></h3><br><br>
+<div style="text-align: center" class="box">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <br>
+      <label for="lastname">Age:</label><br><br>
+      <input type="text" class="form-control" id="age" required [(ngModel)]="age" name="age" placeholder="Enter your age...">
+    </div><br>
+
+    <div class="btn-group">
+      <button type="submit" class="btn btn-success"><b style="font-family:Verdana, Geneva, Tahoma, sans-serif">Submit</b></button>
+    </div>
+  </form>
+</div>
+<ul style="text-align:center">
+  <li *ngFor="let customer of customers" style="text-align:center">
+    <h4>{{customer.id}} - {{customer.name}} {{customer.age}}</h4>
+  </li>
+</ul>

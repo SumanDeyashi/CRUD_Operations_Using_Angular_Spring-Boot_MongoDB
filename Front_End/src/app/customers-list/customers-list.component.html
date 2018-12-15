@@ -1,0 +1,10 @@
+<br><br>
+<h1><b style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><u>Customers</u></b></h1>
+
+<div *ngFor="let customer of customers | async" style="width: 300px;">
+  <customer-details [customer]='customer'></customer-details>
+</div>
+<br><br>
+<div>
+  <button type="button" class="button btn-danger" (click)='deleteCustomers()'><b style="font-family:Verdana, Geneva, Tahoma, sans-serif">Delete All</b></button>
+</div>

@@ -1,0 +1,54 @@
+
+.box
+{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.form-control
+{
+  width:250px;
+  margin-left:20px;
+
+}
+.form-group
+{
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+#age
+{
+  width: 250px;
+  margin-left:30px;
+}
+@media only screen and (max-width: 500px)
+{
+
+    .two
+    {
+      width: 100%;
+    }
+    .form-group
+    {
+      display:flex;
+      padding:0px;
+      width:100%;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 800px)
+
+{
+
+  .two .form-group .form-control
+  {
+    width: 100%;
+  }
+}
+
+
+

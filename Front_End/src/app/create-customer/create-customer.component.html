@@ -1,0 +1,25 @@
+
+<br>
+<h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><u><b>Create Customer</b></u></h3><br><br>
+<div [hidden]="submitted" style="text-align: center" class="box">
+  <form (ngSubmit)="onSubmit()" style="text-align: center">
+    <div class="form-group">
+      <label for="name" style="font-family:Arial, Helvetica, sans-serif">Name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="customer.name" name="name" placeholder="Enter your name...">
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="text" class="form-control" id="age" required [(ngModel)]="customer.age" name="age" placeholder="Enter your age...">
+    </div><br>
+
+    <button type="submit" class="btn btn-success"><b style="font-family:Verdana, Geneva, Tahoma, sans-serif">Submit</b></button>
+  </form>
+</div>
+<br><br>
+
+<div [hidden]="!submitted" style="text-align:center" class="two">
+  <h4 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 40px">You submitted successfully!!!</h4><br><br>
+  <button class="btn btn-success" (click)="newCustomer()"><b style="font-family:Verdana, Geneva, Tahoma, sans-serif">Add</b></button>
+</div>
+
