@@ -11,7 +11,7 @@ Duration: Oct, 2018 to Nov, 2018.
 
 # Procedure:
 
-Here, Angular 7 Http Client & Spring Boot Server which uses Spring Data to do CRUD with MongoDb and Angular 7 as a front-end technology to make request and receive response.
+Here, Angular Http Client & Spring Boot Server which uses Spring Data to do CRUD with MongoDb and Angular as a front-end technology to make request and receive response.
 
 Customer class corresponds to entity and table customer. CustomerRepository is an interface extends MongoRepository, will be autowired in CustomerController for implementing repository methods and custom finder methods. CustomerController is a REST Controller which has request mapping methods for RESTful requests such as: getAllCustomers, postCustomer, deleteCustomer, deleteAllCustomers, findByAge, updateCustomer.
 
