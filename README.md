@@ -18,3 +18,4 @@ Customer class corresponds to entity and table customer. CustomerRepository is a
 Now, 4 components: customers-list, customer-details, create-customer, search-customer. 3 modules: FormsModule, HttpClientModule, AppRoutingModule. customer.ts: class Customer (id, firstName, lastName) customer.service.ts: Service for Http Client methods.
 
 Configuration for Spring Datasource and Spring Data properties in application.properties Dependencies for Spring Boot and MongoDb in pom.xml.
+44
